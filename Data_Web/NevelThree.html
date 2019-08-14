@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Data_Web/Frontend/stylesThree.css">
+    <link rel="stylesheet" href="../Data_Web/Frontend/css/bootstrap.css">
+    <link rel="stylesheet" href="../Data_Web/Frontend/css/boo.css">
+    <title>Niños Sin Limite</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+        <h2 class="row justify-content-center">Tercer Nivel</h2>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="progress">
+              <div class="bg-warning progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+              
+            </div>
+            <h2 class="row justify-content-end mr-5  "><span class="icon-star"></span><span class="icon-star"></span><span class="icon-star-empty"></span> Intermedio<span class="icon-star-empty"></span><span class="icon-star-empty"></span><span class="icon-star-empty"></span></h2>
+          </div>
+        </div>
+        <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-8 col-lg-8">
+                            <div id="juego" class="table-responsive">
+                                    <table class="table">
+                                 <tbody>
+                                  <tr>
+                                    <td id="0" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                    <td id="1" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                    <td id="2" class="letra" onclick="girarCarta()"  data-valor="valor">??</td>
+                                    <td id="3" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                      <td id="4" class="letra" onclick="girarCarta()" data-valor="valor">??</td> 
+                                      <td id="5" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                      <td id="6" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                      <td id="7" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                    
+                                  </tr>
+                                  <tr>
+                                      <td id="8" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                      <td id="9" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                      <td id="10" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                      <td id="11" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="12" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                        <td id="13" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                        <td id="14" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+                                        <td id="15" class="letra" onclick="girarCarta()" data-valor="valor">??</td>
+
+                                    </tr>
+                                  
+                                 </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+   
+    <div class="centrar row justify-content-center mb-5">
+        <a id="I" class="btn btn-success mr-2  icon-googleplay text-white" onclick="iniciarJuego()">Iniciar</a>
+        <a id="T"  class="btn btn-danger  icon-ccw" onclick="resetearJuego()" >Reiniciar</a>
+
+    </div>
+</div>
+
+<script src="../Controller/NevelThreeController.js"></script>
+<script src="../Data_Web/Frontend/js/jquery-3.3.1.min.js"></script>
+<script src="../Data_Web/Frontend/js/bootstrap.min.js"></script>
+<script src="../Data_Web/Frontend/js/popper.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+body{
+    background: rgb(107, 186, 238) !important;
+  
+}
+
+#DivOne {
+    width: 76%;
+    height:27vh;
+    background-color: #EB984E;
+    text-align: center;
+    margin-bottom: 5%;
+    color: White;
+    text-align: center;
+    border: rgb(rgb(236, 6, 6)) solid 5px;
+  
+
+}
+
+#DivTwo {
+   width: 76%;
+    height:27vh;
+    background-color: #3498DB;
+    text-align: center;
+    margin-bottom: 5%;
+    color: White;
+    text-align: center;
+  
+
+}
+
+#DivThree {
+    width: 76%;
+    height:25vh;
+    background-color: #52BE80;
+    text-align: center;
+    color: White;
+    text-align: center;
+  
+
+}
+#DivR1 {
+    width: 76%;
+    height:27vh;
+    background-color: #E74C3C;
+    text-align: center;
+    color: black;
+    text-align: center;
+  
+
+}
+#DivR2 {
+   width: 76%;
+    height:27vh;
+    background-color: #8E44AD;
+    text-align: center;
+    color: black;
+    text-align: center;
+  
+
+}
+#DivR3 {
+    width: 76%;
+    height:25vh;
+    background-color: #7F8C8D;
+    text-align: center;
+    color: black;
+    text-align: center;
+  
+
+}
+
+
+img{
+    width: 20%;
+}

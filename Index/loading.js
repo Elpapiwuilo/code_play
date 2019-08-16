@@ -10,10 +10,10 @@ function DisableCharger(){
     });
      
     var tileSize = 15;
-    var tileCount = 20;
+    var tileCount = 15;
     var angle = 0;
     var rad = 0;
-    var radius = 120;
+    var radius = 90;
     var centerX = 150;
     var centerY = 150;
     var tile;

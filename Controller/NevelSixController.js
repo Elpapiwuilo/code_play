@@ -1,14 +1,14 @@
 var cartas = new Array( 
-    {nombre: '1', seleccion: false}, {nombre: '3', seleccion: false}, 
-    {nombre: 'C', seleccion: false}, {nombre: 'D', seleccion: false}, 
+    {nombre: 'a', seleccion: false}, {nombre: 'e', seleccion: false}, 
+    {nombre: 'i', seleccion: false}, {nombre: 'D', seleccion: false}, 
     {nombre: '8', seleccion: false}, {nombre: '7', seleccion: false}, 
-    {nombre: 'G', seleccion: false}, {nombre: 'H', seleccion: false}, 
-    {nombre: '5', seleccion: false}, {nombre: '4', seleccion: false}, 
-    {nombre: '1', seleccion: false}, {nombre: '3', seleccion: false}, 
-    {nombre: 'C', seleccion: false}, {nombre: 'D', seleccion: false}, 
+    {nombre: 'G', seleccion: false}, {nombre: 'o', seleccion: false}, 
+    {nombre: 'u', seleccion: false}, {nombre: '4', seleccion: false}, 
+    {nombre: 'a', seleccion: false}, {nombre: 'e', seleccion: false}, 
+    {nombre: 'i', seleccion: false}, {nombre: 'D', seleccion: false}, 
     {nombre: '8', seleccion: false}, {nombre: '7', seleccion: false},
-    {nombre: 'G', seleccion: false}, {nombre: 'H', seleccion: false},
-    {nombre: '5', seleccion: false}, {nombre: '4', seleccion: false} );
+    {nombre: 'G', seleccion: false}, {nombre: 'o', seleccion: false},
+    {nombre: 'u', seleccion: false}, {nombre: '4', seleccion: false} );
           
   var intentos = 0;
   var jugada1 = "";
@@ -34,7 +34,7 @@ var cartas = new Array(
       var carta = cartas[i].nombre;
       var dato = document.getElementById( i.toString() );
       dato.dataset.valor = carta;
-      colorCambio( i, 'chartreuse', '??');
+      colorCambio( i, '#F5B041', '??');
     } 
   }
   
@@ -52,22 +52,22 @@ var cartas = new Array(
         cartas[parseInt(identificadorJ1)].seleccion = true;
         cartas[parseInt(identificadorJ2)].seleccion = true;
   
-        colorCambio(identificadorJ2, "teal", jugada2);
+        colorCambio(identificadorJ2, "#17A589", jugada2);
         vaciar();
         comprobar();
       }else if(identificadorJ1 !== identificadorJ2){
         var self = this;
         setTimeout(function(){
-          colorCambio(self.identificadorJ1, "chartreuse", "??")
-          colorCambio(self.identificadorJ2, "chartreuse", "??")
+          colorCambio(self.identificadorJ1, "#F5B041", "??")
+          colorCambio(self.identificadorJ2, "#F5B041", "??")
           vaciar()
         },200); 
   
-        colorCambio(identificadorJ2, "teal", jugada2);
+        colorCambio(identificadorJ2, "#17A589", jugada2);
       }
     } else if(jugada2 !== "valor") {
   
-      colorCambio(identificadorJ2, "teal", jugada2);
+      colorCambio(identificadorJ2, "#17A589", jugada2);
   
       jugada1 = jugada2;
       identificadorJ1 = identificadorJ2;
@@ -96,8 +96,8 @@ var cartas = new Array(
   
     }
   
-    if(aciertos == 20){
-      document.getElementById("juego").innerHTML = "<section id='DivControl'><div class='row justify-content-center'><div class='col-sm-12 '><div class='jumbotron'><h1 class='display-4'>Descubre los animales</h1> <p class='lead'>Desliza el mouse sobre tu color favorito</p><hr class='my-4'><a  class='btn btn-primary' data-toggle='modal' data-target='#Logro' >Siguiente</a></div></div></div> </div><div class='row'><div class='col-sm-10  h-75'><div class='modal fade' id='Logro' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'><div class='modal-dialog modal-dialog-centered' role='document'><div class='modal-content' id='fondoL'><div class='modal-header offset-1'><div class='offset-4'><h5 class='modal-title offset-4' id='exampleModalCenterTitle'>Rango</h5></div></div><div class='modal-body'><h1 class='display-4  icon-star mb-5 offset-1'>Avanzado</h1><h3 class=' icon-emo-sunglasses mb-4 offset-4'>Ultimo nivel, espero que este juego fuera de tu agrado</h3></div><div><div class='row justify-content-center mb-5'> <a href='../Data_Web/NevelSix.html' class='btn btn-success mr-4 icon-right-1' >Siguiente</a> <a href='../Data_Web/NevelFive.html' class='btn btn-warning  icon-ccw mr-4' >Jugar de nuevo</a><a href='../Index/index.html'class='btn btn-danger  icon-cancel' >Salir</a></div> </div></div></div></div></div></div>";
+    if(aciertos == 2){
+      document.getElementById("juego").innerHTML = "<section id='DivControl'><div class='row justify-content-center'><div class='col-sm-12 '><div class='jumbotron'><h1 class='display-4'>Felicidades</h1> <p class='lead'>Desliza el mouse sobre tu color favorito</p><hr class='my-4'><a  class='btn btn-primary' data-toggle='modal' data-target='#Logro' >Siguiente</a></div></div></div> </div><div class='row'><div class='col-sm-10  h-75'><div class='modal fade' id='Logro' tabindex='-1' role='dialog' aria-labelledby='exampleModalCenterTitle' aria-hidden='true'><div class='modal-dialog modal-dialog-centered' role='document'><div class='modal-content text-white' id='fondoL'><div class='modal-header offset-1'><div class='offset-4'><h5 class='modal-title offset-4' id='exampleModalCenterTitle'>Ganaste</h5></div></div><div class='modal-body'><h1 class='display-4  icon-star mb-5 offset-1'>Felicidades Ganaste</h1> <h1><span class='icon-star text-warning'></span><span class='icon-star text-warning'></span><span class='icon-star text-warning'></span><span class='icon-star text-warning'></span><span class='icon-star text-warning'></span><span class='icon-star text-warning'></span></h1><h3 class=' icon-emo-sunglasses mb-4 offset-4'>Espero que este juego fuera de tu agrado, Exitos..</h3></div><div><div class='row justify-content-center mb-5'>  <a href='../Data_Web/NevelSix.html' class='btn btn-warning  icon-ccw mr-4' >Jugar de nuevo</a><a href='../Index/index.html'class='btn btn-danger  icon-cancel' >Salir</a></div> </div></div></div></div></div></div>";
       document.getElementById('T').style.display='none';
       document.getElementById('I').style.display='none';
     }
@@ -109,7 +109,7 @@ var cartas = new Array(
                   var carta = cartas[i].nombre;
                   var dato = document.getElementById( i.toString() );
                   dato.dataset.valor = carta;
-                  colorCambio(i, 'chartreuse', '??');
+                  colorCambio(i, '#F5B041', '??');
               }
           };
 

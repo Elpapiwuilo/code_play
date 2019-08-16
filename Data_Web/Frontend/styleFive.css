@@ -1,6 +1,6 @@
 @import url('../Frontend/css/playicon.css');
 body{
-    background: rgba(245, 126, 47, 0.712) !important;
+    background: rgba(84, 21, 233, 0.644) !important;
 }
 #fondoL{
     background: url('../Data_Add/Logros.jpg');
@@ -81,16 +81,18 @@ table {
 
 
 td {
-  
-    background-color: #3498DB;
+
+    background: chartreuse ;
     border: 3px solid black;
     border-radius: 5px;
+    
+   
 }
 
 .letra {
-    color: white;
-    font-size: 1rem;
+    color: black;
     font-family: cursive;
+    font-size:1.4rem;
     text-align: center;
     font-style: italic;
 }

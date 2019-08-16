@@ -86,7 +86,8 @@ td {
 
 .letra {
     color: white;
-    font-size: 32px;
+    font-size: 1.4rem;
+    font-family: cursive;
     text-align: center;
     font-style: italic;
 }
